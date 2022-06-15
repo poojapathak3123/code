@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: lightgray">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-1 col-xl-1" style="background-color: white;
+        height: 790px;">
+            <nav class="navbar navbar-light navbar-expand-sm px-0 flex-row flex-nowrap">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarWEX" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                 <div class="navbar-collapse collapse" id="navbarWEX">
+                    <div class="nav flex-sm-column flex-row">
+                        <a class="nav-item nav-link active" href="#"></a>
+                        <a href="#" class="nav-item nav-link"><i class="fa fa-suitcase"></i></a>
+                        <a href="#" class="nav-item nav-link"><i class="fa fa-arrow-right-arrow-left"></i></a>
+                        <a href="#" class="nav-item nav-link"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col py-2">
+            <div class="container-fluid" style="background-color: white;height: 40px">
+            	<div class="row">
+            		<div class="col-md-4" align="left"> Exchange Not Connected</div>
+            		<div class="col-md-8" align="right"> Trial Subscription-7 more days left <button type="button" class="btn btn-outline-secondary" style="border-color: purple;color: indigo;height: 30px ;margin-top: 3px;padding-right: 10px;padding-bottom: 26px">Renew Subscription</button>
+</div>
+            	</div>
+ 
+</div>
+
+<div class="container" style="margin-top: 10px">
+  <div class="row">
+    <div class="col" style="background-color: white;height: 213px ; margin-right: 8px" >
+    	<div align="right"><button type="button" class="btn btn-secondary btn-sm" style="background-color: white;color: black; box-shadow: 2px 2px lightgray;border-color: white">2.043454 BTC</button></div>
+    	
+      <h6>Balance</h6>
+      <h1>$25,200.97</h1>
+      
+      <div>
+
+	</div>
+	<div class="row">
+    <div class="col">
+      <h6><i class="fa fa-arrow-down"></i>Invested</h6>
+      <h5>$10,458.00 <div class="vl" style="border-right:1px solid gray ; height: 40px;margin-top: -44px ">
+      	      </div>
+</h5>
+<button class="btn btn-outline-secondary btn-sm" style="border-color: purple;color: purple">Add Exchange</button>
+
+    </div>
+    <div class="col">
+      <h6><i class="fa fa-arrow-up"></i>%Profit</h6>
+      <h5>+60%</h5>
+      <div class="vl" style="border-right:1px solid gray ; height: 40px; margin-top: -55px" ></div>
+    </div>
+    <div class="col">
+      <h6><i class="fa fa-arrow-up"></i>USD Profit</h6>
+      <h5>$15,648.38</h5>
+
+      
+    </div>
+  </div>
+
+       </div>
+
+  
+
+
+    <div class="col" style="background-color: white;height: 213px">
+
+     <div class="row">
+     	<div class="col">
+
+     		<div style="margin-top: 20px">
+                <div>
+                    <canvas id="chDonut1"></canvas>
+                </div>
+            </div>
+     	</div>
+    <div class="col">
+     <ul>
+     	<li style="padding-bottom: 4px;padding-top: 4px;color:indigo;">Bitcoin</li>
+     	<h4>$11,567.00</h4>
+
+
+     	<li style="padding-bottom: 4px;padding-top: 4px;color: darkorchid">Ethereum</li>
+     	<h4>$5,583.00</h4>
+
+     	<li style="padding-bottom: 4px;padding-top: 4px;color:mediumpurple">Monero</li>
+     	<h4>$8,050.97</h4>
+     </ul>
+ </div>
+ </div>
+
+    </div>
+  </div>
+  
+</div>
+
+<div class="container" style="margin-top:10px"> 
+	<div class="row">
+    <div class="col" style="background-color: white;height: 260px ; margin-right:8px">
+      <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+      <hr>
+      	<div class="row">
+
+    <div class="col">
+      <h6><i class=""></i>Week</h6>
+      <h5>%7 <div class="vl" style="border-right:1px solid gray ; height: 40px;margin-top: -44px ">
+      	      </div>
+</h5>
+
+
+    </div>
+    <div class="col">
+      <h6><i class=""></i>Year</h6>
+      <h5>29%</h5>
+      <div class="vl" style="border-right:1px solid gray ; height: 40px; margin-top: -55px" ></div>
+    </div>
+    <div class="col">
+      <h6><i class=""></i>All Time</h6>
+      <h5>254%</h5>
+
+      
+    </div>
+  </div>
+
+    </div>
+    <div class="col" style="background-color: white;height: 260px; margin-right :8px">
+       <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+       	<hr>
+       	<div class="row">
+    <div class="col">
+      <h6><i class=""></i>Week</h6>
+      <h5>7% <div class="vl" style="border-right:1px solid gray ; height: 40px;margin-top: -44px ">
+      	      </div>
+</h5>
+
+
+    </div>
+    <div class="col">
+      <h6><i class=""></i>Year</h6>
+      <h5>29%</h5>
+      <div class="vl" style="border-right:1px solid gray ; height: 40px; margin-top: -55px" ></div>
+    </div>
+    <div class="col">
+      <h6><i class=""></i>All Time</h6>
+      <h5>254%</h5>
+
+      
+    </div>
+  </div>
+
+    </div>
+    <div class="col" style="background-color: white;height: 260px ;margin-right: 8px">
+       <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+       <hr>
+       	<div class="row">
+    <div class="col">
+      <h6><i class=""></i>Week</h6>
+      <h5>7% <div class="vl" style="border-right:1px solid gray ; height: 40px;margin-top: -44px ">
+      	      </div>
+</h5>
+
+    </div>
+    <div class="col">
+      <h6><i class=""></i>Year</h6>
+      <h5>%29</h5>
+      <div class="vl" style="border-right:1px solid gray ; height: 40px; margin-top: -55px" ></div>
+    </div>
+    <div class="col">
+      <h6><i class=""></i>All Time</h6>
+      <h5>254%</h5>
+
+      
+    </div>
+  </div>
+
+    </div>
+  </div></div>
+<div class="container" style="margin-top: 10px; width:100%">
+  <div class="row">
+    <div class="col-7" style="background-color: white;height: 300px ; margin-right: 4px" >
+      <div id="chartContainer" style="height: 300px; width: 90%;">
+    </div>
+    
+  
+</div>
+<div class="col-4" style="background-color: white;height: 300px;width:100%">
+    	<div align="right">
+    <button class="btn btn-outline-secondary btn-sm" style="color: indigo; margin-top: 20px;background-color: lightgray; border-color: lightgray">See all</button>
+</div>
+<div class="row">
+	<div class="col"><span class="fi-transfer"></span>
+      <h6>Transactions</h6>
+      <ul>
+      	<li>Buy</li>
+      	<h6>$250.00</h6>
+      	<li>sell</li>
+      	<h6>$250.00</h6>
+      	<li>sell</li>
+      	<h6>$250.00</h6>
+      </ul>
+</div>
+	<div class="col">
+		<p align="right" style="margin-top: 40px">Apr 20,2020</p>
+		<p align="right" style="margin-top: 40px">Apr 16,2020</p>
+		<p align="right" style="margin-top: 25px">Apr 10,2020</p>
+	</div>
+</div>
+    	
+    
+  </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+/* chart.js chart examples */
+
+// chart colors
+var colors = ["#880ED4",
+  "#B24BF3",
+  "#D7A1F9"
+  ];
+
+/* 3 donut charts */
+var donutOptions = {
+  cutoutPercentage: 85, 
+  legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
+};
+
+// donut 1
+var chDonutData1 = {
+    //labels: ['Bootstrap', 'Popper', 'Other'],
+    datasets: [
+      {
+        backgroundColor: colors.slice(0,3),
+        borderWidth: 0,
+        data: [18, 60, 20]
+      }
+    ]
+};
+
+var chDonut1 = document.getElementById("chDonut1");
+if (chDonut1) {
+  new Chart(chDonut1, {
+      type: 'pie',
+      data: chDonutData1,
+      options: donutOptions
+  });
+}
+
+// donut 2
+var chDonutData2 = {
+    labels: ['Wips', 'Pops', 'Dags'],
+    title:"abbb",
+    datasets: [
+      {
+        backgroundColor: colors.slice(0,3),
+        borderWidth: 0,
+        data: [40, 45, 30]
+      }
+    ]
+};
+var chDonut2 = document.getElementById("chDonut2");
+if (chDonut2) {
+  new Chart(chDonut2, {
+      type: 'pie',
+      data: chDonutData2,
+      options: donutOptions
+  });
+}
+
+// donut 3
+var chDonutData3 = {
+    labels: ['Angular', 'React', 'Other'],
+    title:"abcd",
+    datasets: [
+      {
+        backgroundColor: colors.slice(0,3),
+        borderWidth: 0,
+        data: [21, 45, 55, 33]
+      }
+    ]
+};
+var chDonut3 = document.getElementById("chDonut3");
+if (chDonut3) {
+  new Chart(chDonut3, {
+      type: 'pie',
+      data: chDonutData3,
+      options: donutOptions
+  });
+}
+
+
+
+</script>
+<script>
+var xValues = ['Feb','Mar','Apr','May','Jun','Jul','Aug','S..'];
+var yValues = [7,12,10,9,8,10,9,7,6,11,8];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgb(148,0,211)",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+</script>
+<script>
+var xValues = ['Feb','Mar','Apr','May','Jun','Jul','Aug','S..'];
+var yValues = [8,12,10,9,8,10,9,7,6,11,8];
+
+new Chart("myChart1", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgb(148,0,211)",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+</script>
+<script>
+var xValues = ['Feb','Mar','Apr','May','Jun','Jul','Aug','S..'];
+var yValues = [7,12,10,9,8,10,9,7,6,11,8];
+
+new Chart("myChart2", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgb(148,0,211)",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+</script>
+<script type="text/javascript">
+window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+        title:{
+           
+            fontFamily: "times new roman"
+        },
+        zoomEnabled: true,
+        exportEnabled: true,
+        axisY: {
+            includeZero:false,
+            title: "Prices",
+            prefix: "$ "
+        },
+        axisX: {
+            interval:2,
+            intervalType: "month",
+            valueFormatString: "MMM-YY",
+            labelAngle: -45
+        },
+        data: [
+        {
+            type: "candlestick",
+            risingColor: "indigo",
+            color: "red",
+            dataPoints: [
+                {x: new Date(2012,01,01),y:[5198, 5629, 5159, 5385]},
+                {x: new Date(2012,02,01),y:[5366, 5499, 5135, 5295]},
+                {x: new Date(2012,03,01),y:[5296, 5378, 5154, 5248]},
+                {x: new Date(2012,04,01),y:[5254, 5279, 4788, 4924]},
+                {x: new Date(2012,05,01),y:[4910, 5286, 4770, 5278]},
+                {x: new Date(2012,06,01),y:[5283, 5348, 5032, 5229]},
+                {x: new Date(2012,07,01),y:[5220, 5448, 5164, 5258]},
+                {x: new Date(2012,08,01),y:[5276, 5735, 5215, 5703]},
+                {x: new Date(2012,09,01),y:[5704, 5815, 4888, 5619]},
+                {x: new Date(2012,10,01),y:[5609, 5885, 5548, 5879]},
+                {x: new Date(2012,11,01),y:[5878, 5965, 5823, 5905]},
+                {x: new Date(2013,00,01),y:[5937, 6111, 5935, 6034]},
+                {x: new Date(2013,01,01),y:[6040, 6052, 5671, 5693]},
+                {x: new Date(2013,02,01),y:[5702, 5971, 5604, 5682]},
+                {x: new Date(2013,03,01),y:[5697, 5962, 5477, 5930]},
+                {x: new Date(2013,04,01),y:[5911, 6229, 5910, 5985]},
+                {x: new Date(2013,05,01),y:[5997, 6011, 5566, 5842]},
+                {x: new Date(2013,06,01),y:[5834, 6093, 5675, 5742]},
+                {x: new Date(2013,07,01),y:[5776, 5808, 5118, 5471]},
+                {x: new Date(2013,08,01),y:[5480, 6142, 5318, 5735]},
+                {x: new Date(2013,09,01),y:[5756, 6309, 5700, 6299]},
+                {x: new Date(2013,10,01),y:[6289, 6342, 5972, 6176]},
+                {x: new Date(2013,11,01),y:[6171, 6415, 6129, 6304]}
+            ]
+        }
+        ]
+    });
+    chart.render();
+}
+</script>
+
+
+
+</body>
+</html>
